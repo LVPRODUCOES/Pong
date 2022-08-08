@@ -5,7 +5,11 @@ using UnityEngine;
 public class Ball : MonoBehaviour
 {
     public float SpeedBall;
-    
+
+    public float SpeedAdd;
+
+    public float SpeedBallMax;
+
     public float directionRandomX;
 
     public float directionRandomY;
@@ -23,9 +27,11 @@ public class Ball : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
-       
-
+    {       
+      if(SpeedBall < SpeedBallMax)
+      {
+        SpeedBall += SpeedAdd;
+      }
     }
 
     private void MoveBall()

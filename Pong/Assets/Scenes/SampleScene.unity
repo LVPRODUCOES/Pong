@@ -292,6 +292,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpeedBall: 8
+  SpeedAdd: 0.5
+  SpeedBallMax: 20
   directionRandomX: 0.5
   directionRandomY: 0.5
   oRigidybody2D: {fileID: 518647995}
